@@ -27,7 +27,7 @@ def default_config():
         "save_recording_path": "./tmp/record_videos",
         "save_trace_path": "./tmp/traces",
         "save_agent_history_path": "./tmp/agent_history",
-        "task": "幫我去至少七個網站蒐集一下消費者對聯發科天璣9400的評價與對比",
+        "task": "幫我去至少三個網站蒐集一下消費者對聯發科天璣9400的評價與對比",
     }
 
 
