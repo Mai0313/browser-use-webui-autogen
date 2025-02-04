@@ -19,7 +19,7 @@ from browser_use.agent.views import (
 )
 from browser_use.browser.browser import Browser
 from browser_use.browser.context import BrowserContext
-from browser_use.browser.views import BrowserStateHistory
+from browser_use.browser.views import BrowserStateHistory, BrowserState
 from browser_use.controller.service import Controller
 from browser_use.telemetry.views import (
 	AgentEndTelemetryEvent,
