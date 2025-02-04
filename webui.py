@@ -268,7 +268,6 @@ async def run_org_agent(
             browser_context=_global_browser_context,
             max_actions_per_step=max_actions_per_step,
             tool_calling_method=tool_calling_method,
-            generate_gif=False,
         )
         history = await agent.run(max_steps=max_steps)
 
