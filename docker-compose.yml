@@ -3,7 +3,7 @@ services:
     platform: linux/amd64
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./docker/Dockerfile.web
     ports:
       - "7788:7788"  # Gradio default port
       - "6080:6080"  # noVNC web interface
