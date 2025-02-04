@@ -9,7 +9,7 @@ def default_config():
     return {
         "agent_type": "custom",
         "max_steps": 100,
-        "max_actions_per_step": 10,
+        "max_actions_per_step": 20,
         "use_vision": True,
         "tool_calling_method": "auto",
         "llm_provider": "openai",
@@ -19,7 +19,7 @@ def default_config():
         "llm_api_key": "",
         "use_own_browser": os.getenv("CHROME_PERSISTENT_SESSION", "false").lower() == "true",
         "keep_browser_open": False,
-        "headless": False,
+        "headless": True,
         "disable_security": True,
         "enable_recording": True,
         "window_w": 1280,

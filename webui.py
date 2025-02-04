@@ -648,7 +648,7 @@ def create_ui(config, theme_name="Ocean"):
                         )
                         max_actions_per_step = gr.Slider(
                             minimum=1,
-                            maximum=20,
+                            maximum=50,
                             value=config['max_actions_per_step'],
                             step=1,
                             label="Max Actions per Step",
