@@ -94,6 +94,7 @@ dev = [
     "ipywidgets>=8.1.5",
     "mkdocs-material>=9.5.49",
     "mkdocstrings[python]>=0.27.0",
+    "poethepoet>=0.32.2",
     "pre-commit>=4.0.1",
     "pytest>=8.3.4",
     "pytest-asyncio==0.23.8",
@@ -169,6 +170,19 @@ main = { cmd = "python ./main.py" }
 "docs:run" = "mkdocs serve"
 gen = { chain = ["docs:gen", "docs:deploy"] }
 docs = { chain = ["docs:gen", "docs:run"] }
+
+[tool.poe.tasks]
+api = "python ./api.py"
+web = "python ./webui.py"
+ui = "python ./webui.py"
+main = "python ./main.py"
+
+# Documentation
+docs_gen = "make gen-docs"
+docs_deploy = "mkdocs gh-deploy --force --clean"
+docs_run = "mkdocs serve"
+gen = ["docs_gen", "docs_deploy"]
+docs = ["docs_gen", "docs_run"]
 
 # https://docs.astral.sh/uv/reference/settings
 [tool.uv]
