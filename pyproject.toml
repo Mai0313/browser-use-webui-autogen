@@ -66,11 +66,11 @@ authors = [
     { name = "Wei", email = "mai@mai0313.com" },
 ]
 dependencies = [
-    "browser-use>=0.1.35",
-    "gradio>=5.10.0",
+    "browser-use==0.1.29",
+    "gradio==5.10.0",
     "json-repair>=0.35.0",
-    "langchain-mistralai>=0.2.4",
-    "pyperclip>=1.9.0",
+    "langchain-mistralai==0.2.4",
+    "pyperclip==1.9.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"
