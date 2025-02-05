@@ -201,6 +201,7 @@ no-binary = false
 offline = false
 prerelease = "if-necessary"
 preview = true
+# override-dependencies = ["playwright==1.15.0"]
 
 # https://docs.astral.sh/uv/reference/settings/#index
 [[tool.uv.index]]
